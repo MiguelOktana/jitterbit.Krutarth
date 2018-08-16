@@ -86,5 +86,13 @@ If you are using the orgs in the documentation don't follow the next steps.
 
 In order to complete the sync you must add one custom field to Account and one to Contact objects.
 
-
+1. Go to Setup
+2. Go to Object Manager
+3. Select Account object
+4. Select Fields & Relationships
+5. Click New
+6. Select Text as Data Type
+7. Put Ext_id in Label, 18 in  lenght and check External Id
+8. Next, next and save.
+9. Repeat the process witch Contact usin ext_id as Label
 
