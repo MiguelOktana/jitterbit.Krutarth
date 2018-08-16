@@ -9,12 +9,14 @@ In the reverse sync Org A is the destination and B the origin.
 * [Create URL Harmony API](#Create-URL-Harmony-API)
 * [Modifying the PostClient class code](#Modifying-the-PostClient-class-code)
 * [Copy the trigger code](#Copy-the-trigger-code)
+* [Register sites in orgs](#Register-sites-in-orgs)
+* [Add custom fields](#Add-custom-fields)
 
 ## Dependencies
 
 * Jitterbit Studio https://success.jitterbit.com/display/DOC/Design+Studio
 * An harmony account https://www.jitterbit.com/harmony/
-
+* Add custom fields to Account and Contact object
 
 ## Installation
 
@@ -53,6 +55,8 @@ In the reverse sync Org A is the destination and B the origin.
 
 10. Click 'Save and Publish' Button.
 
+11. In the org the jitterbit.net domain must be register, to do this view the section Register sites in orgs
+
 You need one api url for each operation, in this case you need two. You need this urls in the section
 "Modify the PostClient".
 
@@ -72,6 +76,15 @@ If you are using the orgs in the documentation don't follow the next steps.
 2. In Org B (destination org) the trigger is only on update.
 
 3. Copy the class PostClient to the orgs A nad B.
+
+
+## Register sites in orgs
+
+1.  Follow the instructions in [this](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_remote_site_settings.htm)
+
+## Add custom fields
+
+In order to complete the sync you must add one custom field to Account and one to Contact objects.
 
 
 
